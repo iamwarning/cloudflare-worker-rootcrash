@@ -128,15 +128,15 @@ async function handleRequest(event) {
     const requestMethod = request.method
     const requestCf = request.cf
 
-    if (!!requestCf) {
-        if (!!requestCf.tlsClientAuth) {
-            delete requestCf.tlsClientAuth
-        }
-
-        if (!!requestCf.tlsExportedAuthenticator) {
-            delete requestCf.tlsExportedAuthenticator
-        }
-    }
+    // if (!!requestCf) {
+    //     if (!!requestCf.tlsClientAuth) {
+    //         delete requestCf.tlsClientAuth
+    //     }
+    //
+    //     if (!!requestCf.tlsExportedAuthenticator) {
+    //         delete requestCf.tlsExportedAuthenticator
+    //     }
+    // }
 
     const responseMetadata = buildMetadataFromHeaders(response.headers)
 
