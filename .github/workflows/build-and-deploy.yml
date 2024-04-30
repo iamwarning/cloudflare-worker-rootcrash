@@ -25,7 +25,7 @@ jobs:
       url: https://jorgel.io/
     strategy:
       matrix:
-        node-version: 18
+        node-version: [ 18 ]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4.1.4
